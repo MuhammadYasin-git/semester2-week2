@@ -12,20 +12,6 @@ def get_connection(db_path="orders.db"):
     conn.row_factory = sqlite3.Row
     return conn
 
-def menu():
-    '''
-    Prints menu and prompts for choice
-    Returns choice (string)
-    '''
-    print("1 - List All Product Categories")
-    print("2 - Total Number of Customers")
-    print("3 - Orders for a Customer")
-    print("4 - All products priced below £2")
-    print("Q - quit")
-    choice = -1
-    while (choice not in ["1","2","3","4","5","Q"]):
-        choice = input("Enter your choice: ").upper()
-    return choice
 
 
 
